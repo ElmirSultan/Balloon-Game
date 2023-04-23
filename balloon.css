@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+body{
+    background-color: #000;
+    font-family: 'Ranchers', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.game{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.game h1{
+    margin-top: 1rem;
+    color: #FFf;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Ranchers', cursive;
+}
+
+.game .game-board{
+    width: 60rem;
+    border: 2px solid #fff;
+    height: 30rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem rgb(216, 14, 216);
+    position: relative;
+    overflow: hidden;
+    
+}
+.game .game-board .circle{
+    width: 2rem;
+    height: 2rem;
+   color: #fff;
+   background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 1rem #fff;
+}
+.game .game-board .circle.middle{
+    width: 2.6rem;
+    height: 2.6rem;
+   color: red;
+   background-color: red;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1rem red;
+
+}
+.game .game-board .circle.big{
+    width: 3.5rem;
+    height: 3.5rem;
+   color: blue;
+   background-color: blue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1rem blue;
+
+}
+.game .game-board .circle.little{
+    font-size: 1.6rem;
+}
+.game .oyun{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.game .oyun .score{
+    color: #FFf;
+    display: flex;
+    width: 12rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    position: relative;
+}
+.game .oyun .score button{
+   cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    background-color: rgb(18, 177, 18);
+    color: #FFf;
+    font-family: 'Ranchers', cursive;
+    border: none;
+    border-radius: 0.5rem;
+}
+.game .game-board .qutu{
+    width: 10rem;
+    height: 7rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.5rem;
+}
+
+@media (max-width:1225px) {
+    .game .oyun{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .game .oyun .game-board{
+        width: 40rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .game .oyun{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .game .oyun .game-board{
+        width: 20rem ;
+        height: 40rem;
+    }
+
+}

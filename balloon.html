@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./balloon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Game</title>
+</head>
+<body>
+    
+  <section class="game">
+    <h1>Balloon game</h1>
+    <div class="oyun">
+      <div class="game-board" id="game-board">
+        <div class="circle little"></div>
+        <div class="circle little"></div>
+        <div class="circle little"></div>
+        <div class="circle middle"></div>
+        <div class="circle big"></div>
+        <div class="qutu" id="qutu"></div>
+    </div>
+    <div class="score">
+      <p id="show-score">Score: 0</p>
+      <p id="highest-score">Highest Score: </p>
+      <p id="time">Time: </p>
+      <button id="start-button" onclick="setInterval(moveCircles,30)">Start</button>
+    </div>
+    </div>
+    <audio id="popSound" src="./audio/mixkit-pebbles-click-1128.wav"></audio>
+  </section>
+ 
+
+    <script src="./balloon.js"></script>
+</body>
+</html>
